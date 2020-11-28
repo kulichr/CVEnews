@@ -10,7 +10,7 @@ TRED = '\033[31m'
 response = requests.get('http://cve.circl.lu/api/last')
 json = response.json()
 
-print("Last CVEs:")
+print("Latest CVEs:")
 for show in json:
     print(TGREEN + "CVE: " + show['id'],TWHITE)
     print(TGREEN + "Summary info: ",TWHITE + show['summary'])
